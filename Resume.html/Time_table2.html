@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Time Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      text-align: center;
+      margin: 5px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      text-align: center;
+      padding: 6px;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .break {
+      background-color: #ffe5b4;
+      font-weight: bold;
+    }
+
+    .subject {
+      white-space: pre-line;
+    }
+
+    /* Subject Color Classes */
+    .ip { background-color: #c6e2ff; }
+    .cns { background-color: #ffe4e1; }
+    .eeb { background-color: #f0fff0; }
+    .se { background-color: #fffacd; }
+    .adsa { background-color: #e6e6fa; }
+    .pce { background-color: #d1ffd1; }
+    .mini { background-color: #f9d5e5; }
+
+    .footer, .legend {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    .footer div, .legend div {
+      margin: 4px 0;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Flexbox layout for batch cells */
+    .subject-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .subject-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .subject-row div {
+      width: 33%;
+    }
+
+    .left { text-align: left; }
+    .center { text-align: center; }
+    .right { text-align: right; }
+  </style>
+</head>
+<body>
+
+  <h2>BHARATI VIDYAPEETH COLLEGE OF ENGINEERING, NAVI MUMBAI</h2>
+  <h3>DEPARTMENT OF INFORMATION TECHNOLOGY</h3>
+  <h3>TIME TABLE (2025–26) ODD SEM</h3>
+  <div class="title">Class: TE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class Advisor: Dr. S. S. Kadam</div>
+
+  <table>
+    <tr>
+      <th>Day/Time</th>
+      <th colspan="2">1 & 2<br>9:10–11:10</th>
+      <th>Break<br>11:10–11:20</th>
+      <th>3<br>11:20–12:20</th>
+      <th>4<br>12:20–1:20</th>
+      <th>Break<br>1:20–2:00</th>
+      <th>5<br>2:00–3:00</th>
+      <th>6<br>3:00–4:00</th>
+      <th>7<br>4:00–4:30</th>
+    </tr>
+
+    <tr>
+      <td>Monday</td>
+      <td class="subject" colspan="2">
+        <div class="subject-layout">
+          <div class="subject-row">
+            <div class="left">B1</div>
+            <div class="center">B2</div>
+            <div class="right">B3</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">SL</div>
+            <div class="center">IPL</div>
+            <div class="right">AdvDevOps</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">JCW</div>
+            <div class="center">SSK</div>
+            <div class="right">VEP</div>
+          </div>
+        </div>
+      </td>
+      <td class="break" rowspan="6">B<br>R<br>E<br>A<br>K</td>
+      <td class="subject eeb">EEB<br>HAC</td>
+      <td class="subject cns">CNS<br>JCW</td>
+      <td class="break" rowspan="6">B<br>R<br>E<br>A<br>K</td>
+      <td class="subject pce">PCE-II<br>BRS</td>
+      <td class="subject ip">IP<br>SSK</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Tuesday</td>
+      <td class="subject" colspan="2">
+        <div class="subject-layout">
+          <div class="subject-row">
+            <div class="left">B1</div>
+            <div class="center">B2</div>
+            <div class="right">B3</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">DevOps Lab</div>
+            <div class="center">DevOps Lab</div>
+            <div class="right">DevOps Lab</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">HAC</div>
+            <div class="center">BRS</div>
+            <div class="right">IPL / SSK</div>
+          </div>
+        </div>
+      </td>
+      <td></td>
+      <td class="subject pce">PCE-II<br>BRS</td>
+      <td class="subject adsa">ADSA<br>ASC</td>
+      <td class="subject se">SE<br>VEP</td>
+      <td class="subject cns">CNS<br>JCW</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Wednesday</td>
+      <td class="subject" colspan="2">
+        <div class="subject-layout">
+          <div class="subject-row">
+            <div class="left">B1</div>
+            <div class="center">B2</div>
+            <div class="right">B3</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">PCE-II</div>
+            <div class="center">DevOps</div>
+            <div class="right">IPL</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">BRS</div>
+            <div class="center">HAC</div>
+            <div class="right">SSK</div>
+          </div>
+        </div>
+      </td>
+      <td class="subject"></td>
+      <td class="subject ip">IP<br>SSK</td>
+      <td class="subject eeb">EEB<br>HAC</td>
+      <td class="subject se">SE<br>VEP</td>
+      <td class="subject mini" colspan="2">Mini Project 2A</td>
+    </tr>
+
+    <tr>
+      <td>Thursday</td>
+      <td class="subject" colspan="2">
+        <div class="subject-layout">
+          <div class="subject-row">
+            <div class="left">B1</div>
+            <div class="center">B2</div>
+            <div class="right">B3</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">AdvDevOps</div>
+            <div class="center">AdvDevOps</div>
+            <div class="right">AdvDevOps</div>
+          </div>
+          <div class="subject-row">
+            <div class="left">SL</div>
+            <div class="center">PCE-II</div>
+            <div class="right">VEP</div>
+          </div>
+        </div>
+      </td>
+      <td class="subject"></td>
+      <td class="subject cns">CNS<br>JCW</td>
+      <td class="subject adsa">ADSA<br>ASC</td>
+      <td class="subject eeb">EEB<br>HAC</td>
+      <td class="subject mini" colspan="2">Mini Project 2A</td>
+    </tr>
+
+   <tr>
+  <td>Friday</td>
+  <td class="subject" colspan="2">
+    <div class="subject-layout">
+      <div class="subject-row">
+        <div class="left">B1</div>
+        <div class="center">B2</div>
+        <div class="right">B3</div>
+      </div>
+      <div class="subject-row">
+        <div class="left">SL</div>
+        <div class="center">AdvDevOps</div>
+        <div class="right">DevOps</div>
+      </div>
+      <div class="subject-row">
+        <div class="left">SSK</div>
+        <div class="center">VEP</div>
+        <div class="right">HAC</div>
+      </div>
+    </div>
+  </td>
+  <td class="subject"></td>
+  <td class="subject se">SE<br>VEP</td>
+  <td class="subject adsa">ADSA<br>ASC</td>
+  <td class="subject ip">IP<br>SSK</td>
+  <td class="subject mini" colspan="2">Mini Project 2A</td>
+</tr>

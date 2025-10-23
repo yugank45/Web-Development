@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BVCOE IT TE Timetable (2025-26 ODD SEM)</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px;
+            background: #fff;
+        }
+        h2, h3 {
+            text-align: center;
+            margin: 0;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .advisor {
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 4px 6px;
+            text-align: center;
+        }
+        th {
+            background: #2e86c1;
+            color: #fff;
+        }
+        /* Day color backgrounds */
+        tr:nth-child(3) { background: #eaf2f8; } /* Monday */
+        tr:nth-child(4) { background: #e8f8f5; } /* Tuesday */
+        tr:nth-child(5) { background: #f9e79f; } /* Wednesday */
+        tr:nth-child(6) { background: #fdebd0; } /* Thursday */
+        tr:nth-child(7) { background: #f5eef8; } /* Friday */
+        tr:nth-child(8) { background: #f2f4f4; } /* Saturday */
+        /* Highlight Mini Project 2A */
+        td:contains('Mini Project 2A') {
+            background: #fadbd8 !important;
+            font-weight: bold;
+            color: #c0392b;
+        }
+        /* Highlight subject codes */
+        td {
+            font-size: 14px;
+        }
+        /* Footer table */
+        .footer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .footer-table td, .footer-table th {
+            border: 1px solid #000;
+            padding: 3px 6px;
+            text-align: left;
+        }
+        .footer-table tr:nth-child(even) {
+            background: #f8f9f9;
+        }
+        .signatures {
+            width: 100%;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+        .signatures td {
+            padding-top: 20px;
+            text-align: center;
+        }
+        /* Responsive for small screens */
+        @media (max-width: 900px) {
+            table, .footer-table {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <!-- For :contains selector to work in CSS, you need jQuery or JS. We'll use JS below. -->
+</head>
+<body>
+    <h2>BHARATI VIDYAPEETH COLLEGE OF ENGINEERING, NAVI MUMBAI</h2>
+    <h3>DEPARTMENT OF INFORMATION TECHNOLOGY</h3>
+    <div class="subtitle"><b>TIME TABLE (2025-26) ODD SEM</b></div>
+    <div class="advisor">
+        <b>Class:</b> TE &nbsp;&nbsp;&nbsp;&nbsp; <b>Class Advisor:</b> Dr. S. S. Kadam
+    </div>
+    <table>
+        <tr>
+            <th rowspan="2">Day/Time</th>
+            <th>1<br>9.10-10.10</th>
+            <th>2<br>10.10-11.10</th>
+            <th>3<br>11.10-12.20</th>
+            <th>4<br>12.20-1.20</th>
+            <th colspan="3">5<br>1.20-2.00</th>
+        </tr>
+        <tr>
+            <th></th><th></th><th></th><th></th>
+            <th>5<br>2.00-3.00</th>
+            <th>6<br>3.00-4.00</th>
+            <th>7<br>4.00-4.30</th>
+        </tr>
+        <!-- Monday -->
+        <tr>
+            <td><b>Monday</b></td>
+            <td>B1<br>SL<br>JCW<br>NWL</td>
+            <td>B2<br>IPL<br>SSK<br>IPL</td>
+            <td>B3<br>AdvDevOps<br>VEP<br>OSTL</td>
+            <td></td>
+            <td>TE<br>CNS<br>HAC<br>110</td>
+            <td>TE<br>JCW<br>110</td>
+            <td></td>
+        </tr>
+        <!-- Tuesday -->
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td>DevOps<br>B1<br>HAC<br>DBL</td>
+            <td>PCE-II<br>B2<br>BRS<br>BRS</td>
+            <td>IPL<br>B3<br>JCW<br>OSTL</td>
+            <td></td>
+            <td>PCE-II<br>BRS<br>110</td>
+            <td>TE<br>SE<br>VEP<br>110</td>
+            <td></td>
+        </tr>
+        <!-- Wednesday -->
+        <tr>
+            <td><b>Wednesday</b></td>
+            <td>B1<br>PCE-II<br>BRS<br>NWL</td>
+            <td>DevOps<br>AdvDevOps<br>HAC<br>OSTL</td>
+            <td>B2<br>BRS<br>JCW<br>IPL</td>
+            <td></td>
+            <td>TE<br>EEB<br>VEP</td>
+            <td>Mini Project 2A</td>
+            <td></td>
+        </tr>
+        <!-- Thursday -->
+        <tr>
+            <td><b>Thursday</b></td>
+            <td>AdvDevOps<br>VEP<br>OSTL</td>
+            <td>B1<br>JCW<br>NWL</td>
+            <td>PCE-II<br>B2<br>HAC<br>OSTL</td>
+            <td></td>
+            <td>TE<br>ADSA<br>ASC<br>110</td>
+            <td>Mini Project 2A</td>
+            <td></td>
+        </tr>
+        <!-- Friday -->
+        <tr>
+            <td><b>Friday</b></td>
+            <td>B1<br>IPL<br>SSK<br>IPL</td>
+            <td>B2<br>AdvDevOps<br>VEP<br>OSTL</td>
+            <td>B3<br>AdvDevOps<br>HAC<br>DBL</td>
+            <td></td>
+            <td>TE<br>ADSA<br>ASC<br>110</td>
+            <td>Mini Project 2A</td>
+            <td></td>
+        </tr>
+        <!-- Saturday -->
+        <tr>
+            <td><b>Saturday</b></td>
+            <td colspan="7"></td>
+        </tr>
+    </table>
+
+    <table class="footer-table">
+        <tr>
+            <td>1. Internet Programming (IP)</td>
+            <td>Dr. S. S. Kadam (SSK)</td>
+            <td>1. IP Lab (IPL)</td>
+            <td>Dr. S. S. Kadam (SSK)</td>
+        </tr>
+        <tr>
+            <td>2. Computer Network Security (CNS)</td>
+            <td>Prof. J. C. Wagh (JCW)</td>
+            <td>2. Security Lab (SL)</td>
+            <td>Prof. J. C. Wagh (JCW)</td>
+        </tr>
+        <tr>
+            <td>3. Entrepreneurship and E-Business (EEB)</td>
+            <td>Prof. H. A. Chavan (HAC)</td>
+            <td>3. DevOps Lab (DevOps)</td>
+            <td>Prof. H. A. Chavan (HAC)</td>
+        </tr>
+        <tr>
+            <td>4. Software Engineering (SE)</td>
+            <td>Prof. V. E. Pawar (VEP)</td>
+            <td>4. Advance DevOps Lab (AdvDevOps)</td>
+            <td>Prof. V. E. Pawar (VEP)</td>
+        </tr>
+        <tr>
+            <td>5. Advanced Data Structure and Analysis (ADSA)</td>
+            <td>Prof. A. S. Chavan (ASC)</td>
+            <td>5. Professional Communication & Ethics-II (PCE-II)</td>
+            <td>Prof. B. R. Singh (BRS)</td>
+        </tr>
+        <tr>
+            <td>6. Professional Communication & Ethics-II (PCE-II)</td>
+            <td>Prof. B. R. Singh (BRS)</td>
+            <td>6. Mini Project – 2A Web Based Business Model</td>
+            <td>Prof. A. S. Chavan (ASC)</td>
+        </tr>
+    </table>
+
+    
+    <script>
+        // Highlight "Mini Project 2A" cells (since :contains doesn't work in pure CSS)
+        document.querySelectorAll('td').forEach(function(td) {
+            if (td.textContent.includes('Mini Project 2A')) {
+                td.style.background = '#fadbd8';
+                td.style.fontWeight = 'bold';
+                td.style.color = '#c0392b';
+            }
+        });
+    </script>
+</body>
+</html>

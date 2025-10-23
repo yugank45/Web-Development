@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admissions Form</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('image3.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+}
+    form {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    h2, p {
+      text-align: center;
+      margin: 0 0 20px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .field {
+      flex: 1;
+      min-width: 250px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 10px 0 15px;
+    }
+    .checkbox-group {
+      justify-content: space-between;
+    }
+    .submit-btn {
+      background: #007bff;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <h2>COLLEGE ADMISSIONS FORM</h2>
+  <p>Enter your admission information below</p>
+  <div class="row">
+    <div class="field">
+      <label>First Name</label>
+      <input type="text" name="firstName" required>
+    </div>
+    <div class="field">
+      <label>Middle Name</label>
+      <input type="text" name="middleName">
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <input type="text" name="lastName" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="field">
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+    </div>
+    <div class="field">
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Citizenship</label>
+      <select name="citizen" required>
+        <option value="">Please Select</option>
+        <option>India</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="field">
+      <label>Phone</label>
+      <input type="tel" name="phone" placeholder="(000) 000-0000" required>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="example@example.com" required>
+    </div>
+  </div>
+  <div class="field">
+    <label>Street Address</label>
+    <input type="text" name="address1" required>
+    <input type="text" name="address2" placeholder="Street Address Line 2">
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>City</label>
+      <input type="text" name="city">
+    </div>
+    <div class="field">
+      <label>State</label>
+      <select name="state" required>
+        <option selected>Maharashtra</option>
+        <option>Gujarat</option>
+        <option>Karnataka</option>
+        <option>Tamil Nadu</option>
+        <option>Delhi</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Postal / Zip Code</label>
+      <input type="text" name="zipcode">
+    </div>
+  </div>
+  <div class="field">
+    <label>Interested Department</label>
+    <select name="department" required>
+      <option value="">-- Select Department --</option>
+      <option>Computer Science</option>
+      <option>Information Technology</option>
+      <option>Electronics</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+    </select>
+  </div>
+
+  <h3 style="margin-top:30px;">Emergency Contact</h3>
+  <div class="row">
+    <div class="field">
+      <label>First Name</label>
+      <input type="text" name="emgFirst" required>
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <input type="text" name="emgLast" required>
+    </div>
+    <div class="field">
+      <label>Relationship</label>
+      <input type="text" name="relationship" placeholder="e.g., Father">
+    </div>
+  </div>
+  <div class="row">
+    <div class="field">
+      <label>Email</label>
+      <input type="email" name="emgEmail">
+    </div>
+    <div class="field">
+      <label>Phone Number</label>
+      <input type="tel" name="emgPhone" placeholder="(000) 000-0000">
+    </div>
+  </div>
+  <label>Do you speak any languages other than English?</label>
+  <div class="radio-group">
+    <label><input type="radio" name="langOther" value="Yes"> Yes</label>
+    <label><input type="radio" name="langOther" value="No"> No</label>
+  </div>
+  <div class="checkbox-group">
+    <label>I confirm that all entered information is accurate.</label>
+    <input type="checkbox" name="confirm" required>
+  </div>
+  <button type="submit" class="submit-btn">Submit</button>
+</form>
+</body>
+</html>
